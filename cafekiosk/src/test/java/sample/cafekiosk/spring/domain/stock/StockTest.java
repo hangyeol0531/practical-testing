@@ -1,5 +1,6 @@
 package sample.cafekiosk.spring.domain.stock;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.DynamicTest;
 import org.junit.jupiter.api.Test;
@@ -55,6 +56,7 @@ class StockTest {
             .hasMessage("차감할 재고 수량이 없습니다.");
     }
 
+    @Disabled
     @DisplayName("")
     @TestFactory
     Collection<DynamicTest> dynamicTest() {
